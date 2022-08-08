@@ -1,0 +1,264 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+}
+#over{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: gilroy;
+    position: absolute;
+  
+    background-color: rgba(161, 159, 158, 0.575);
+}
+#over>h1{
+    font-weight: 700;
+    color: rgb(79, 10, 10);
+}
+#over>button{
+    width: 6vw;
+    height: 5vh;
+    border: none;
+    font-size: 1.2vw;
+    border-radius: 7%;
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+    margin-top: 1vw;
+}
+#board{
+    width: 80%;
+    height: 80vh;
+  
+    background-color: rgb(250, 250, 250);
+    
+}
+#top{
+    padding: 0 5vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 4vw;
+   background-color: green;
+}
+#left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbox{
+    font-family: gilroy;
+    font-weight: 300;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8vw;
+    color: azure;
+    height: 100%;
+}
+.topbox>h2{
+    font-weight: 500;
+}
+.inrtopbox{
+    width: 2.5vw;
+    height: 2.5vw;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+#lifeno{
+    width: 4.5vw;
+}
+#lifeno>h3{
+    color: red;
+    letter-spacing: 0.2vw;
+}
+#bottom{
+    
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+    background-color: rgb(247, 237, 237);
+}
+.bubble{
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: rgb(82, 136, 82);
+}
+
+
+
+@media (max-width:700px) {
+    #main{
+        overflow: hidden;
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgreen;
+    }
+    #over{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-family: gilroy;
+        position: absolute;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+        background-color: rgba(161, 159, 158, 0.575);
+    }
+    #over>h1{
+        font-weight: 700;
+        color: rgb(79, 10, 10);
+    }
+    #over>button{
+        width: 18vw;
+        height: 5vw;
+        border: none;
+        font-size: 4vw;
+        border-radius: 7%;
+        color: #fff;
+        cursor: pointer;
+        background-color: red;
+        margin-top: 1vw;
+    }
+    #board{
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(250, 250, 250);
+        
+    }
+    #top{
+        padding: 0 5vw;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 100%;
+       height: 30vw;
+    
+       background-color: green;
+    }
+    #left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #right{
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .topbox{
+        font-family: gilroy;
+        font-weight: 300;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30vw;
+        color: azure;
+        height: 100%;
+    }
+    .topbox>h2{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .inrtopbox{
+        width: 10vw;
+        height: 7vw;
+        color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+    }
+    .inrtopbox>h3{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    #lifeno{
+        width: 15.5vw;
+    }
+    #lifeno>h3{
+        color: red;
+        letter-spacing: 0.2vw;
+    }
+    #bottom{
+        
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        background-color: rgb(247, 237, 237);
+    }
+    .bubble{
+        cursor: pointer;
+        width: 8vw;
+        height: 8vw;
+        color: #fff;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        border-radius: 50%;
+        margin-right: 20px;
+       
+        background-color: rgb(82, 136, 82);
+    }
+    
+    
+    
+}
