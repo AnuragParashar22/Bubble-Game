@@ -229,6 +229,7 @@ html,body{
         width: 15.5vw;
     }
     #lifeno>h3{
+         font-size: 4vw;
         color: red;
         letter-spacing: 0.2vw;
     }
